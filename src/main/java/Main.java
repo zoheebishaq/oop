@@ -14,18 +14,28 @@ public class Main {
 
         Student[] student = new Student[5];
 
-        Student zoheeb;
-    }
-    // create a class
-    class Student {
-        int rno ;
-        String name ;
-        float marks ;
+        Student zoheeb = new Student(13,"zoheeb ishaque",88.5f);
+        Student ali = new Student(14,"ali mawla",99.99F);
 
-        public Student(int rno, String name, float marks) {
-            this.rno = rno;
-            this.name = name;
-            this.marks = marks;
-        }
+        System.out.println(zoheeb.name);
+        System.out.println(zoheeb.marks);
+        System.out.println(zoheeb.rno);
+
+        System.out.println(ali.name);
+        System.out.println(ali.marks);
+        System.out.println(ali.rno);
+    }
+
+}
+// create a class
+class Student {
+    int rno ;
+    String name ;
+    float marks ;
+
+    public Student(int rno, String name, float marks) {
+        this.rno = rno;
+        this.name = name;
+        this.marks = marks;
     }
 }
